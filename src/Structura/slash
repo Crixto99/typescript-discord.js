@@ -1,0 +1,9 @@
+import { MessageEmbed } from 'discord.js';
+
+module.exports = {
+    name: "",
+    description: "",
+    run: async(client, interaction) => {
+
+    }
+}
