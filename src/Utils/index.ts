@@ -4,11 +4,9 @@ import path from "path";
 
 export function runAll(client: Client) {
 
-    const { commandHandler } = require("../Handler/command");
     const { slashHandler } = require("../Handler/slash");
     const { eventHandler } = require("../Handler/event");
 
-    commandHandler(client, fs, path);
     slashHandler(client, fs, path);
     eventHandler(client, fs, path);
 
